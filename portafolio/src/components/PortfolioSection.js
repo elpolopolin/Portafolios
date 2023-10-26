@@ -7,7 +7,7 @@ const PortfolioSection = () => {
         <div className="row center-xs">
           <div className="col-md">
             <h2 className="section-title">Portfolio</h2>
-            <p>Nuestras Creaciones</p>
+            <p>Nuestras colaboraciones con otros artistas</p>
           </div>
         </div>
       </div>
@@ -57,21 +57,21 @@ const portfolioItems = [
     link: '#',
   },
   {
-    title: 'Project Title 4',
-    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
-    image: 'img/project-4.jpg',
+    title: 'Too Hard',
+    description: 'I can live off my closet before I go broke',
+    image: 'https://i.discogs.com/fCpiagQhsq_tnNAhtlHEgMImF2f71vyOG4yBf_IJ1d8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDI2/NTU0LTE2NjAwNzU2/MTktNjkyMi5qcGVn.jpeg',
     link: '#',
   },
   {
-    title: 'Project Title 5',
-    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
-    image: 'img/project-5.jpg',
+    title: 'My Blood',
+    description: 'Puente Alto',
+    image: 'https://e.snmc.io/i/600/s/2786f7745ec150bf179618ae811cc08c/7404820/polima-westcoast-my-blood-Cover-Art.png',
     link: '#',
   },
   {
-    title: 'Project Title 6',
-    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
-    image: 'img/project-6.jpg',
+    title: 'BZRP',
+    description: 'loading',
+    image: 'https://corta.com/wp-content/uploads/2023/07/Bizarrap-gorra.jpg',
     link: '#',
   },
 ];
