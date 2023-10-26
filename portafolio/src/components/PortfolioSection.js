@@ -1,6 +1,21 @@
-import React from 'react';
+import {useState, useEffect} from 'react';
+
+
 
 const PortfolioSection = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const openModal = (item) => {
+    setSelectedItem(item);
+    setModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setSelectedItem(null);
+    setModalOpen(false);
+  }
+  
   return (
     <section className="portfolio" id="portfolio">
       <div className="container">
@@ -14,23 +29,35 @@ const PortfolioSection = () => {
       <div className="padding-small">
         <div className="row margin-bottom-small">
           {portfolioItems.map((item, index) => (
-            <div className="col-md-4" key={index}>
+            <div className="col-md-4 " key={index}>
               <div className="hover-outer-box">
-                <img src={item.image} alt={`Project ${index + 1}`} />
+                <img src={item.image} alt={`Project ${index + 1}`} style={{height: "55vh", marginBottom: "10px"}}/>
                 <div className="hover-inner-box">
                   <div className="hover-content">
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
                     <a href={item.link}>
-                      <button className="light">Call to action</button>
+                    <button onClick={(e) => { e.preventDefault(); openModal(item); }} className="light">Ver</button>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           ))}
+             {isModalOpen && selectedItem && (
+        <div className="modal">
+          <div className="modal-content">
+            <img src={selectedItem.image} />
+            <h3>{selectedItem.title}</h3>
+            <p>{selectedItem.description}</p>
+            <a href={selectedItem.link}>Enlace</a>
+            <button onClick={closeModal} className="light">Cerrar</button>
+          </div>
+        </div>
+      )}
         </div>
       </div>
+   
     </section>
   );
 };
