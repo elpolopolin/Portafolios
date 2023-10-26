@@ -18,8 +18,7 @@ const Footer = () => {
           <div className="col-md-8">
             <h3>About us</h3>
             <p>
-              We are a group of famous musicians who have been rocking the world with our music. Lorem ipsum dolor sit amet, consetetur
-              sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Somos un grupo de músicos famosos que hemos estado sacudiendo al mundo con nuestra música. Contamos con estudios propios, artitas firmados bajo nuestro sello y un equipo de la mejor calidad .
             </p>
           </div>
           <div className="col-md-4">
