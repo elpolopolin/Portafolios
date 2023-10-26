@@ -28,71 +28,73 @@ function Index() {
             </header>
             <div className="wrapper">
               <main>
+
                 <section className="intro" id="about-us">
                   <div className="container">
                     <div className="row">
                       <div className="col-md">
-                        <h2 className="section-title">About text</h2>
+                        <h2 className="section-title">Sobre Nosotros</h2>
                       </div>
                     </div>
                     <div className="row margin-bottom">
                       <div className="col-md">
-                        <p className="highlight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                        <p className="author">- John Doe</p>
+                        <p className="highlight">Buscamos impulsar el talento de los jovenes artitas que quieren un futuro con la musica, el talento avaces se encuentra donde menos te los esperes.</p>
+                        <p className="author">- Rumpelinsky</p>
                       </div>
                       <div className="col-md">
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <p>Hemos colaborado con grandes artitas a nivel internacional como travis scott, king von y lil baby, no solo sabemos producir mezclas si no que tambien tenemos nuestros proyectos individuales.</p>
                       </div>
                       <div className="col-md">
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                        <p>Tenemos artistas firmados por nuestro sello discografico y trabajamos en conjuntos para beneficio de ambos.</p>
                       </div>
                     </div>
                     <div className="row team center-xs">
                       <div className="col-md">
                         <div className="hover-outer-box">
-                          <img src="img/Romi-Kobe.jpg" alt="Team Member" />
+                          <img src={require("../img/rocco.jpg")} alt="Team Member" />
                           <div className="hover-inner-box">
                             <div className="hover-content">
-                              <h3>Romi Kobe</h3>
-                              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                              <h3>Rocco Bolainas</h3>
+                              <p>Fundador del estudio y productor.</p>
                               <a href="#!" target="_blank" rel="noopener"><img src="img/facebook-icon.svg" className="team-icon" alt="Facebook" /></a>
                               <a href="#!" target="_blank" rel="noopener"><img src="img/twitter-icon.svg" className="team-icon" alt="Twitter" /></a>
                             </div>
                           </div>
                         </div>
-                        <p className="team-name">Romi Kobe<br /><span className="position">CEO</span></p>
+                        <p className="team-name">Rocco Bolainas<br /><span className="position">CEO/productor</span></p>
                       </div>
                       <div className="col-md">
                         <div className="hover-outer-box">
-                          <img src="img/Isaac-Desideria.jpg" alt="Team Member" />
+                          <img src={require("../img/polo.jpg")} alt="Team Member" />
                           <div className="hover-inner-box">
                             <div className="hover-content">
-                              <h3>Isaac Desideria</h3>
-                              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                              <h3>Antoan Polonsky</h3>
+                              <p>Cofundador del estudio y guitarrista profesinal.</p>
                               <a href="#!" target="_blank" rel="noopener"><img src="img/facebook-icon.svg" className="team-icon" alt="Facebook" /></a>
                               <a href="#!" target="_blank" rel="noopener"><img src="img/twitter-icon.svg" className="team-icon" alt="Twitter" /></a>
                             </div>
                           </div>
                         </div>
-                        <p className="team-name">Isaac Desideria<br /><span className="position">CTO</span></p>
+                        <p className="team-name">Antoan Polonsky<br /><span className="position">CEO/Artista</span></p>
                       </div>
                       <div className="col-md">
                         <div className="hover-outer-box">
-                          <img src="img/Magda-Ilija.jpg" alt="Team Member" />
+                          <img src={require("../img/forni.jpg")} alt="Team Member" />
                           <div className="hover-inner-box">
                             <div className="hover-content">
-                              <h3>Magda Ilija</h3>
-                              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                              <h3>Tomas Forxxo</h3>
+                              <p>Artista destacado del genero urbano.</p>
                               <a href="#!" target="_blank" rel="noopener"><img src="img/facebook-icon.svg" className="team-icon" alt="Facebook" /></a>
                               <a href="#!" target="_blank" rel="noopener"><img src="img/twitter-icon.svg" className="team-icon" alt="Twitter" /></a>
                             </div>
                           </div>
                         </div>
-                        <p className="team-name">Magda Ilija<br /><span className="position">Designer</span></p>
+                        <p className="team-name">Tomas Forxxo<br /><span className="position">Artista</span></p>
                       </div>
                     </div>
                   </div>
                 </section>
+
                 <hr />
 
                 {/*section services*/}
@@ -100,7 +102,7 @@ function Index() {
                   <div className="container">
                     <div className="row center-xs">
                       <div className="col-md">
-                        <h2 className="section-title">Our Services</h2>
+                        <h2 className="section-title">Nuestros Servicios</h2>
                       </div>
                     </div>
                     <div className="row around-xs">
@@ -108,28 +110,28 @@ function Index() {
                         <div className="service">
                           <img src="img/001-achievement.svg" alt="Service 1" className="icon"/>
                           <h3>Service 1</h3>
-                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                          <p>Somos productores con experiencia y podemos colaborar en tus temas.</p>
                         </div>
                       </div>
                       <div className="col-md-3">
                         <div className="service">
                           <img src="img/002-pencil.svg" alt="Service 2"  className="icon"/>
                           <h3>Service 2</h3>
-                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                          <p>Trabajamos con plazos de tiempo para optimizar mejor tus proyectos.</p>
                         </div>
                       </div>
                       <div className="col-md-3">
                         <div className="service">
                           <img src="img/003-idea.svg" alt="Service 3" className="icon"/>
                           <h3>Service 3</h3>
-                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                          <p>Contamos con estudios en Buenos Aires para poder trabajar juntos.</p>
                         </div>
                       </div>
                       <div className="col-md-3">
                         <div className="service">
                           <img src="img/004-shopping-bag.svg" alt="Service 4" className="icon"/>
                           <h3>Service 4</h3>
-                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                          <p>Proporcionamos mezclas y beats para ayudarte con tus proyectos.</p>
                         </div>
                       </div>
                     </div>
