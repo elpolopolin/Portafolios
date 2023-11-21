@@ -1,0 +1,75 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Estilos CSS para el contenido del modal */
+  .modal-content {
+    background-color: #fff;
+    width: 60%; /* El modal ocupa el 60% del ancho de la pantalla */
+    height: 90vh; /* El modal ocupa el 50% de la altura de la pantalla */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .modal-content h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .modal-content a {
+    display: block;
+    text-decoration: none;
+    color: #007BFF;
+    margin-top: 10px;
+  }
+  
+  .modal-content button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .modal-content button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-content img {
+    max-width: 100%;
+    max-height: 60vh;
+  }

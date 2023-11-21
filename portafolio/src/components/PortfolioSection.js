@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
 const PortfolioSection = () => {
@@ -10,6 +11,7 @@ const PortfolioSection = () => {
   const openModal = (item) => {
     setSelectedItem(item);
     setModalOpen(true);
+    
   }
 
   const closeModal = () => {
@@ -60,16 +62,18 @@ const PortfolioSection = () => {
           ))
         }
              {isModalOpen && selectedItem && (
+        <div className="modal-overlay">
         <div className="modal">
           <div className="modal-content">
-            <img src={selectedItem.image} />
+            <img src={selectedItem.image} alt={selectedItem.title} />
             <h3>{selectedItem.title}</h3>
             <p>{selectedItem.description}</p>
             <a href={selectedItem.link}>Enlace</a>
             <button onClick={closeModal} className="light">Cerrar</button>
           </div>
         </div>
-      )}
+      </div>
+    )}
         </div>
       </div>
    
