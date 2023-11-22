@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from './Contact';
 
 const Footer = () => {
   return (
@@ -74,6 +75,7 @@ const Footer = () => {
             <p>I thank the following people for their contribution: <a href="credits.txt">Credits</a>.</p>
           </div>
         </div>
+        <Contact />
       </div>
     </footer>
 

@@ -15,7 +15,7 @@ export default function Home() {
     
     {background && (
           <div
-            className="hero flex middle-xs"
+            className="hero flex middle-xs mt-12"
             style={{
               backgroundImage: background,
             }}

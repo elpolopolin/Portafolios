@@ -4,20 +4,10 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
 const PortfolioSection = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+ 
   const [selectedItem, setSelectedItem] = useState(null);
   const [portfolioItems, setPortfolioItems] = useState([]);
 
-  const openModal = (item) => {
-    setSelectedItem(item);
-    setModalOpen(true);
-    
-  }
-
-  const closeModal = () => {
-    setSelectedItem(null);
-    setModalOpen(false);
-  }
 
   useEffect(() => {
     axios.get('/portfolio.json') 
@@ -34,8 +24,8 @@ const PortfolioSection = () => {
       <div className="container">
         <div className="row center-xs">
           <div className="col-md">
-            <h2 className="section-title">Portfolio</h2>
-            <p>Nuestras colaboraciones con otros artistas</p>
+            <h2 className="section-title text-2xl">Portfolio</h2>
+            <p className='text-xl'>Nuestras colaboraciones con otros artistas</p>
           </div>
         </div>
       </div>
@@ -53,7 +43,7 @@ const PortfolioSection = () => {
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
                     <a href={item.link}>
-                      <button onClick={(e) => { e.preventDefault(); openModal(item); }} className="light">Ver</button>
+                    <Link to={`/ver/${index + 1}`}><button className="bg-pink-400 rounded-md p-2 w-24">Ver</button> </Link>
                     </a>
                   </div>
                 </div>
@@ -61,19 +51,8 @@ const PortfolioSection = () => {
             </div>
           ))
         }
-             {isModalOpen && selectedItem && (
-        <div className="modal-overlay">
-        <div className="modal">
-          <div className="modal-content">
-            <img src={selectedItem.image} alt={selectedItem.title} />
-            <h3>{selectedItem.title}</h3>
-            <p>{selectedItem.description}</p>
-            <a href={selectedItem.link}>Enlace</a>
-            <button onClick={closeModal} className="light">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    )}
+            
+    
         </div>
       </div>
    

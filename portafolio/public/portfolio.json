@@ -1,39 +1,66 @@
 
     [
         {
+          "id": 1,
           "title": "What It Means to Be King",
           "description": "the way to be the king of the block",
           "image": "https://static.hiphopdx.com/2020/11/kingvonalbumcover.jpg",
           "link": "#"
         },
         {
+          "id": 2,
           "title": "UTOPIA",
           "description": "feel what you hear and listen to what you feel",
           "image": "https://img1.wsimg.com/isteam/ip/52dec005-a404-4023-8c5e-0944af49ac85/FwhTOJ4X0AApKIr.jpg",
           "link": "#"
         },
         {
+          "id": 3,
           "title": "Bocanada",
           "description": "Arte Guitarrozo",
           "image": "https://i.scdn.co/image/ab67616d0000b2731152471596980e1bba03b6ab",
           "link": "#"
         },
         {
+          "id": 4,
           "title": "Too Hard",
           "description": "I can live off my closet before I go broke",
           "image": "https://i.discogs.com/fCpiagQhsq_tnNAhtlHEgMImF2f71vyOG4yBf_IJ1d8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDI2/NTU0LTE2NjAwNzU2/MTktNjkyMi5qcGVn.jpeg",
           "link": "#"
         },
         {
+          "id": 5,
           "title": "My Blood",
           "description": "Puente Alto",
           "image": "https://e.snmc.io/i/600/s/2786f7745ec150bf179618ae811cc08c/7404820/polima-westcoast-my-blood-Cover-Art.png",
           "link": "#"
         },
         {
+          "id": 6 ,
           "title": "BZRP",
           "description": "loading",
           "image": "https://corta.com/wp-content/uploads/2023/07/Bizarrap-gorra.jpg",
+          "link": "#"
+        },
+        {
+          "id": 7 ,
+          "title": "GATTI",
+          "description": "Pop Smoke & Travis Scott prod by PoloRocan.",
+          "image": "https://i1.sndcdn.com/artworks-DyImXZ3pX2DxTUjp-yvL2Kw-t500x500.jpg",
+          "link": "#"
+        },
+        {
+          "id": 8 ,
+          "title": "Ransom",
+          "description": "Lil Tecca prod by PoloRocan.",
+          "image": "https://i.scdn.co/image/ab67616d0000b273422113b080aa8e2effae4fa2",
+          "link": "#"
+        },
+        {
+          "id": 9 ,
+          "title": "Tengo 30",
+          "description": "Khea feat forxxo, Duki, Neo Pistea y TALI.",
+          "image": "https://i1.sndcdn.com/artworks-oGirYgNahVEA-0-t500x500.jpg",
           "link": "#"
         }
       ]
